@@ -6,7 +6,7 @@ CLASS_TYPE="class"
 if [ "$COMP_TYPE" == "" ]; then
 echo "useage ./newComp.sh name component_type"
 exit
-elif [ "$COMP_TYPE" == "$FUN" ]; then 
+elif [ "$COMP_TYPE" == "$FUN_TYPE" ]; then 
 touch $GLOBAL_NAME.js
 echo 'import * as React from "react";' > $GLOBAL_NAME.js
 echo "function $GLOBAL_NAME() {">> $GLOBAL_NAME.js
